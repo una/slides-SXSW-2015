@@ -21,13 +21,10 @@ a {
 	display:none;
 	margin:0 0 50px;
 	color:#3C3D40;
-	text-shadow:0 1px 1px #8D8E90;
 	h1 {
 		font:bold 50px/1 'PT Sans Narrow', sans-serif;
 		}
 	a {
-		text-shadow:0 -1px 1px #1F3F60;
-		background:none;
 		&:hover {
 			color:lighten($blue, 5%);
 			}
@@ -148,7 +145,7 @@ a {
 		font-family:'PT Mono', monospace;
 		}
 	mark {
-		background:$yellow;
+		background:$purple;
 		}
 	sub, sup {
 		position: relative;
@@ -345,8 +342,8 @@ a {
 		z-index:1;
 		display:none;
 		padding:20px 120px 4px;
-		background:$yellow;
-		box-shadow:0 0 0 2px desaturate($yellow, 20%) inset;
+		background:$purple;
+		box-shadow:0 0 0 2px desaturate($purple, 20%) inset;
 		transition:bottom 0.3s;
 		p {
 			margin:0 0 16px;

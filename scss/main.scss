@@ -1,10 +1,6 @@
-@import 'vendor/ribbon/defaults';
-@import 'vendor/ribbon/fonts';
 @import 'vendor/ribbon/reset';
-@import 'vendor/ribbon/screen';
 
-
-//Our Styling
+//Vars
 $type--header: 'Magnel', 'Abril Fatface', serif;
 
 //Colors
@@ -15,6 +11,12 @@ $dark-grey: #383d3b;
 $black: #1f1f15;
 $white: #fff;
 $light-grey: #ccc;
+
+
+//from shower
+@import 'vendor/ribbon/fonts';
+@import 'vendor/ribbon/defaults';
+@import 'vendor/ribbon/screen';
 
 body {
   line-height: 1.4;
@@ -39,10 +41,6 @@ h2 {
   font-size: 3.25rem;
 }
 
-.big--blockquote {
-  font-size: 2.5em;
-}
-
 .dark {
   color: $dark-grey;
   // color: $light-grey;
@@ -54,10 +52,9 @@ strong {
 }
 
 // Quote
-blockquote {
+.big--blockquote {
   font-style: italic;
-
-  //pseudoelement
+  font-size: 2.5em;
 
   &:before {
     position: absolute;
@@ -65,5 +62,13 @@ blockquote {
     color: $teal;
     font: 200px/1 'PT Sans', sans-serif;
     content: '\201C';
-    }
   }
+
+  figcaption {
+    font-size: .75em;
+    color: $teal;
+    text-align: right;
+  }
+}
+
+
