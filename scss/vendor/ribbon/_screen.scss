@@ -2,10 +2,6 @@
 // Copyright © 2010–2014 Vadim Makeev, pepelsbey.net
 // Licensed under MIT license: github.com/shower/shower/wiki/MIT-License
 
-@import 'defaults';
-@import 'fonts';
-@import 'reset';
-
 body {
 	counter-reset:slide;
 	font:25px/2 'PT Sans', sans-serif;
@@ -122,11 +118,11 @@ a {
 // -------------------------------
 .slide {
 	// Header
-	h2 {
-		margin:0 0 37px;
-		color:#666;
-		font:bold 50px/1 'PT Sans Narrow', sans-serif;
-		}
+	// h2 {
+	// 	margin:0 0 37px;
+	// 	color:#666;
+	// 	font:bold 50px/1 'PT Sans Narrow', sans-serif;
+	// 	}
 	// Text
 	p {
 		margin:0 0 50px;
@@ -165,22 +161,7 @@ a {
 	sup {
 		top:-0.5em;
 		}
-	// Quote
-	blockquote {
-		font-style:italic;
-		&:before {
-			position:absolute;
-			margin:-16px 0 0 -80px;
-			color:#CCC;
-			font:200px/1 'PT Sans', sans-serif;
-			content:'\201C';
-			}
-		& + figcaption {
-			margin:-50px 0 50px;
-			font-style:italic;
-			font-weight:bold;
-			}
-		}
+
 	// Lists
 	ol, ul {
 		margin:0 0 50px;

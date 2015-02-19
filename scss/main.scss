@@ -2,3 +2,68 @@
 @import 'vendor/ribbon/fonts';
 @import 'vendor/ribbon/reset';
 @import 'vendor/ribbon/screen';
+
+
+//Our Styling
+$type--header: 'Magnel', 'Abril Fatface', serif;
+
+//Colors
+$purple: #b35fe0;
+$light-teal: #9bf3f0;
+$teal: #00A9A5;
+$dark-grey: #383d3b;
+$black: #1f1f15;
+$white: #fff;
+$light-grey: #ccc;
+
+body {
+  line-height: 1.4;
+}
+
+
+%type--header {
+  font-family: $type--header;
+}
+
+h1,
+h2 {
+  @extend %type--header;
+  color: $purple;
+}
+
+h1 {
+  font-size: 5rem;
+}
+
+h2 {
+  font-size: 3.25rem;
+}
+
+.big--blockquote {
+  font-size: 2.5em;
+}
+
+.dark {
+  color: $dark-grey;
+  // color: $light-grey;
+}
+
+strong {
+  @extend %type--header;
+  color: $purple;
+}
+
+// Quote
+blockquote {
+  font-style: italic;
+
+  //pseudoelement
+
+  &:before {
+    position: absolute;
+    margin: -16px 0 0 -80px;
+    color: $teal;
+    font: 200px/1 'PT Sans', sans-serif;
+    content: '\201C';
+    }
+  }
