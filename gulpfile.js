@@ -44,7 +44,7 @@ gulp.task('browser-sync', function() {
 });
 
 gulp.task('js', function() {
-  gulp.src('js/*.js')
+  gulp.src('js/**/*.js')
     .pipe(uglify())
     .pipe(size({ gzip: true, showFiles: true }))
     .pipe(concat('j.js'))
@@ -100,4 +100,4 @@ gulp.task('img-min', function () {
         .pipe(gulp.dest('dist/img'));
 });
 
-gulp.task('default', ['browser-sync', 'img-min', 'minify-html', 'scss', 'watch']);
+gulp.task('default', ['browser-sync', 'img-min', 'js', 'minify-html', 'scss', 'watch']);
