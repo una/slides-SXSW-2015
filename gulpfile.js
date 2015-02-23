@@ -82,6 +82,14 @@ gulp.task('watch', function() {
   gulp.watch('./*.html', ['minify-html']);
 });
 
+/**
+ * Deploy to Gh-Pages
+ */
+gulp.task('deploy', ['jekyll-build'], function () {
+    return gulp.src('./dist/**/*')
+        .pipe(deploy());
+});
+
 gulp.task('img-min', function () {
     return gulp.src('img/*')
         .pipe(imagemin({
