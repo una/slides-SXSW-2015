@@ -1,0 +1,3 @@
+@mixin longshadow($color) {
+  text-shadow: makelongshadow($color);
+}

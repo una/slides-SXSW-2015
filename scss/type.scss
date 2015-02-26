@@ -1,0 +1,49 @@
+
+h1,
+h2 {
+  @extend %type--header;
+  color: $purple;
+
+  &.long-shadow {
+    font-size: 3em;
+    @include longshadow($light-teal);
+  }
+}
+
+h1 {
+  font-size: 5rem;
+}
+
+h2 {
+  font-size: 3.25rem;
+}
+
+.dark {
+  color: $dark-grey;
+  // color: $light-grey;
+}
+
+strong {
+  @extend %type--header;
+  color: $purple;
+}
+
+// Quote
+.big--blockquote {
+  font-style: italic;
+  font-size: 2.5em;
+
+  &:before {
+    position: absolute;
+    margin: -16px 0 0 -80px;
+    color: $teal;
+    font: 200px/1 'PT Sans', sans-serif;
+    content: '\201C';
+  }
+
+  figcaption {
+    font-size: .75em;
+    color: $teal;
+    text-align: right;
+  }
+}

@@ -1,0 +1,22 @@
+
+body {
+  line-height: 1.4;
+  font-family: $type--paragraph;
+}
+
+.list{
+  background-color: $light-grey;
+}
+
+.orange {
+  color: $orange;
+}
+
+%type--header {
+  font-family: $type--header;
+}
+
+
+#Cover {
+background-color: white;
+}
