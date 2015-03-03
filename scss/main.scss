@@ -1,108 +1,15 @@
 @import 'vendor/ribbon/reset';
 
-//Vars
-$type--header: 'Magnel', 'Abril Fatface', serif;
-$type--paragraph: 'Nexa Thin', 'Arial' , sans-serif;
-
-//Colors
-$purple: #1695A3;
-$light-teal: #9bf3f0;
-$teal: #00A9A5;
-$dark-grey: #383d3b;
-$black: #1f1f15;
-$white: #fff;
-$light-grey: #ccc;
-$orange: #EB7F03;
-
-$background-color: #fff;
-
+@import 'vars';
 
 //from shower
 @import 'vendor/ribbon/fonts';
 @import 'vendor/ribbon/defaults';
 @import 'vendor/ribbon/screen';
 
-body {
-  line-height: 1.4;
-  font-family: $type--paragraph;
-}
-
-.list{
-  background-color: $light-grey;
-}
-
-.orange {
-  color: $orange;
-}
-
-%type--header {
-  font-family: $type--header;
-}
-
-
-#Cover {
-background-color: white;
-}
-
-@function makelongshadow($color) {
-  $val: 0px 0px $color;
-  @for $i from 1 through 100 {
-    $val: #{$val}, #{$i}px #{$i}px mix($white, $color, $i);
-  }
-  @return $val;
-}
-
-@mixin longshadow($color) {
-  text-shadow: makelongshadow($color);
-}
-
-h1,
-h2 {
-  @extend %type--header;
-  color: $purple;
-
-  &.long-shadow {
-    font-size: 3em;
-    @include longshadow($light-teal);
-  }
-}
-
-h1 {
-  font-size: 5rem;
-}
-
-h2 {
-  font-size: 3.25rem;
-}
-
-.dark {
-  color: $dark-grey;
-  // color: $light-grey;
-}
-
-strong {
-  @extend %type--header;
-  color: $purple;
-}
-
-// Quote
-.big--blockquote {
-  font-style: italic;
-  font-size: 2.5em;
-
-  &:before {
-    position: absolute;
-    margin: -16px 0 0 -80px;
-    color: $teal;
-    font: 200px/1 'PT Sans', sans-serif;
-    content: '\201C';
-  }
-
-  figcaption {
-    font-size: .75em;
-    color: $teal;
-    text-align: right;
-  }
-}
+@import 'functions';
+@import 'mixins';
+@import 'base';
+@import 'type';
 
 
