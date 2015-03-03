@@ -5,7 +5,7 @@ $type--header: 'Magnel', 'Abril Fatface', serif;
 $type--paragraph: 'Nexa Thin', 'Arial' , sans-serif;
 
 //Colors
-$purple: #1695A3;
+$teal: #1695A3;
 $light-teal: #9bf3f0;
 $teal: #00A9A5;
 $dark-grey: #383d3b;
@@ -59,7 +59,7 @@ background-color: white;
 h1,
 h2 {
   @extend %type--header;
-  color: $purple;
+  color: $teal;
 
   &.long-shadow {
     font-size: 3em;
@@ -82,7 +82,7 @@ h2 {
 
 strong {
   @extend %type--header;
-  color: $purple;
+  color: $teal;
 }
 
 // Quote

@@ -145,7 +145,7 @@ a {
 		font-family:'PT Mono', monospace;
 		}
 	mark {
-		background:$purple;
+		background:$teal;
 		}
 	sub, sup {
 		position: relative;
@@ -342,8 +342,8 @@ a {
 		z-index:1;
 		display:none;
 		padding:20px 120px 4px;
-		background:$purple;
-		box-shadow:0 0 0 2px desaturate($purple, 20%) inset;
+		background:$teal;
+		box-shadow:0 0 0 2px desaturate($teal, 20%) inset;
 		transition:bottom 0.3s;
 		p {
 			margin:0 0 16px;
