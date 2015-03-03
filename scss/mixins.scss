@@ -1,3 +1,18 @@
 @mixin longshadow($color) {
   text-shadow: makelongshadow($color);
 }
+
+//add this to a div to make its image take up the full bg
+// i.e.
+// .class {
+//   @include .full-size('image.jpg');
+// }
+//
+@mixin full-size($img) {
+  background-image: url('../img/#{$img}') !important;
+  background-size: cover;
+}
+
+.fail-gif {
+  @include full-size('fail.gif');
+}
