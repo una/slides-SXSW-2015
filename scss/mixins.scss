@@ -16,3 +16,7 @@
 .fail-gif {
   @include full-size('fail.gif');
 }
+
+.blue-screen {
+  @include full-size('blue-screen.gif');
+}
