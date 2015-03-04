@@ -90,9 +90,9 @@ gulp.task('fonts', function() {
 /**
  * Deploy to Gh-Pages
  */
-gulp.task('deploy', ['jekyll-build'], function () {
+gulp.task('deploy', function () {
     return gulp.src('./dist/**/*')
-        .pipe(deploy());
+    .pipe(deploy());
 });
 
 gulp.task('img-min', function () {
