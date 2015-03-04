@@ -8,6 +8,10 @@ h2 {
     font-size: 3em;
     @include longshadow($light-teal);
   }
+
+  &.large {
+    font-size: 6em;
+  }
 }
 
 h1 {
