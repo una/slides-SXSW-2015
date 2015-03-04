@@ -1,3 +1,17 @@
+@font-face {
+    font-family: 'Nexa';
+    src: url('../fonts/Nexa/Nexa-Thin.otf');
+}
+
+@font-face {
+    font-family: 'Nexa';
+    src: url('../fonts/Nexa/Nexa-Thin-Italic.otf');
+    font-style: italic;
+}
+
+body {
+  font-family: 'Nexa';
+}
 
 h1,
 h2 {
@@ -7,6 +21,10 @@ h2 {
   &.long-shadow {
     font-size: 3em;
     @include longshadow($light-teal);
+  }
+
+  &.large {
+    font-size: 6em;
   }
 }
 
@@ -31,7 +49,7 @@ strong {
 // Quote
 .big--blockquote {
   font-style: italic;
-  font-size: 2.5em;
+  font-size: 2.2em;
 
   &:before {
     position: absolute;
