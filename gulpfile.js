@@ -82,6 +82,11 @@ gulp.task('watch', function() {
   gulp.watch('./*.html', ['minify-html']);
 });
 
+gulp.task('fonts', function() {
+  gulp.src('fonts/**/*')
+    .pipe(gulp.dest('dist/fonts'));
+});
+
 /**
  * Deploy to Gh-Pages
  */
@@ -100,4 +105,4 @@ gulp.task('img-min', function () {
         .pipe(gulp.dest('dist/img'));
 });
 
-gulp.task('default', ['browser-sync', 'img-min', 'js', 'minify-html', 'scss', 'watch']);
+gulp.task('default', ['browser-sync', 'img-min', 'js', 'fonts', 'minify-html', 'scss', 'watch']);
