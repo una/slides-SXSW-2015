@@ -539,6 +539,13 @@ h1, h2, strong {
   src: url('../fonts/Nexa/Nexa-Thin-Italic.otf');
   font-style: italic; }
 
+@font-face {
+  font-family: 'Magnel';
+  src: url('../fonts/Magnel/Magnel-webfont.svg');
+  src: url('../fonts/Magnel/Magnel-webfont.otf');
+  src: url('../fonts/Magnel/Magnel-webfont.woff');
+  src: url('../fonts/Magnel/Magnel-webfont.woff2'); }
+
 body {
   font-family: 'Nexa',sans-serif; }
 
